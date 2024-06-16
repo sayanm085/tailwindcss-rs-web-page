@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'FeelfreeFont'; /* Name your font family */
+    src: url('/fornt/NatureBeautyPersonalUse-9Y2DK.ttf'); /* Locate the .ttf file within your directory*/
+  }
+  .leo{
+    font-family: 'FeelfreeFont';
+  }
+
+
+
+  #checkbox {
+    display: none;
+  }
+  
+  .toggle1 {
+    position: relative;
+    width: 38px;
+    height: 40px;  
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    transition-duration: .3s;
+  }
+  
+  .bars1 {
+    width: 90%;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition-duration: .3s;
+  }
+  
+  #checkbox:checked + .toggle1 .bars1 {
+    margin-left: 13px;
+  }
+  
+  #checkbox:checked + .toggle1 #bar22 {
+    transform: rotate(135deg);
+    margin-left: 0;
+    transform-origin: center;
+    transition-duration: .3s;
+  }
+  
+  #checkbox:checked + .toggle1 #bar11 {
+    transform: rotate(45deg);
+    transition-duration: .3s;
+    transform-origin: left center;
+  }
+  
+  #checkbox:checked + .toggle1 #bar33 {
+    transform: rotate(-45deg);
+    transition-duration: .3s;
+    transform-origin: left center;
+  }
+  
+  body{
+    background-image: url("/hero@75.b2469a49.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .container1 {
+    width: 100%;
+    height: 100%;
+    --color: #FFFFFFB2;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+  }
